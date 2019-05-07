@@ -86,14 +86,9 @@ namespace DLiveDL
 
         }
 
-        private static double Divide(TimeSpan dividend, TimeSpan divisor)
-        {
-            return dividend.Ticks / divisor.Ticks;
-        }
-
         private bool isUrlValid(string url)
         {
-            Regex url_reg = new Regex(@"https:\/\/playback.prd.dlivecdn.com\/live\/[a-zA-Z0-9-_]+\/\d+\/(?:vod|master\/stitched-playlist).m3u8");
+            Regex url_reg = new Regex(@"https:\/\/playback.prd.dlivecdn.com\/live\/[a-zA-Z0-9-_]+\/\d+\/.+.m3u8");
             Match match = url_reg.Match(url);
             return match.Success;
         }

@@ -34,7 +34,7 @@
             this.lblFile = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblFormat = new System.Windows.Forms.Label();
-            this.brnDownload = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
             this.lblProgress = new System.Windows.Forms.Label();
             this.sfdBrowse = new System.Windows.Forms.SaveFileDialog();
             this.btnBrowseFile = new System.Windows.Forms.Button();
@@ -87,16 +87,16 @@
             this.lblFormat.TabIndex = 5;
             this.lblFormat.Text = "Format:";
             // 
-            // brnDownload
+            // btnDownload
             // 
-            this.brnDownload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.brnDownload.Location = new System.Drawing.Point(191, 59);
-            this.brnDownload.Name = "brnDownload";
-            this.brnDownload.Size = new System.Drawing.Size(75, 23);
-            this.brnDownload.TabIndex = 6;
-            this.brnDownload.Text = "Download";
-            this.brnDownload.UseVisualStyleBackColor = true;
-            this.brnDownload.Click += new System.EventHandler(this.brnDownload_Click);
+            this.btnDownload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDownload.Location = new System.Drawing.Point(191, 59);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnDownload.TabIndex = 6;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.brnDownload_Click);
             // 
             // lblProgress
             // 
@@ -124,7 +124,7 @@
             this.ClientSize = new System.Drawing.Size(278, 107);
             this.Controls.Add(this.btnBrowseFile);
             this.Controls.Add(this.lblProgress);
-            this.Controls.Add(this.brnDownload);
+            this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.lblFormat);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblFile);
@@ -149,7 +149,7 @@
         private System.Windows.Forms.Label lblFile;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblFormat;
-        private System.Windows.Forms.Button brnDownload;
+        private System.Windows.Forms.Button btnDownload;
         private System.Windows.Forms.Label lblProgress;
         private System.Windows.Forms.SaveFileDialog sfdBrowse;
         private System.Windows.Forms.Button btnBrowseFile;
